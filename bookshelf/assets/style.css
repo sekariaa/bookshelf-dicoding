@@ -1,0 +1,282 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+h1,
+h2 {
+	text-align: center;
+}
+
+body,
+input,
+button {
+	font-family: 'Open Sans', sans-serif;
+}
+
+input,
+button {
+	font-size: 16px;
+}
+
+header {
+	display: inline;
+}
+
+.head-bar {
+	padding: 12px;
+	display: flex;
+	justify-content: center;
+	background-color: coral;
+	color: white;
+}
+
+*#content {
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	float: left;
+	width: 50%;
+	padding: 20px;
+	place-items: center;
+}
+
+main {
+	overflow: auto;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* INPUT */
+.content-one {
+	box-shadow: 0 4px 8px 0 black;
+	border-radius: 5px;
+	margin: 50px 5px 50px 5px;
+	border: 5px solid;
+	height: 390px;
+	overflow: auto;
+}
+
+.input-content,
+.search-content,
+.bookshelf-content > h2 {
+	padding-top: 10px;
+	color: black;
+}
+
+.input-content > #inputBook {
+	padding: 15px;
+}
+
+.input-content > form > .input {
+	margin: 8px 0;
+}
+
+.input-content > form > button {
+	background: coral;
+	color: white;
+	border: 2px black solid;
+	border: 0;
+	border-radius: 5px;
+	display: block;
+	width: 100%;
+	padding: 8px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.input-content > form > button:hover {
+	border: 2px chocolate;
+	background-color: chocolate;
+}
+
+.input-content > form > .input > input {
+	display: block;
+	width: 100%;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.input-content > form > .input > label {
+	color: black;
+	font-weight: bold;
+}
+
+.input-content > form > .input-inline {
+	margin: 12px 0;
+	display: flex;
+	align-items: center;
+}
+
+.input-content > form > .input-inline > label {
+	color: black;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+small {
+	color: red;
+}
+
+.error-display {
+	display: none;
+}
+
+/* SEARCH */
+aside {
+	float: right;
+	width: 50%;
+	margin-top: 70px;
+	padding-right: 20px;
+}
+
+.content-three {
+	box-shadow: 0 4px 8px 0 black;
+	border-radius: 5px;
+	margin: 0 auto;
+	border: 5px solid;
+	height: 390px;
+	text-align: justify;
+	overflow: auto;
+	margin: 0px 5px 50px 5px;
+}
+
+.search-content > form {
+	padding: 16px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto 1fr 0.5fr;
+	grid-gap: 10px;
+	margin-bottom: -20px;
+}
+
+.search-content > form > label {
+	display: flex;
+	align-items: center;
+}
+
+.search-content > form > input {
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.search-content > form > button {
+	background: coral;
+	border: 2px black solid;
+	color: white;
+	border: 0;
+	border-radius: 5px;
+	display: block;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.search-content > form > button:hover {
+	border: 2px chocolate;
+	background-color: chocolate;
+}
+
+.search-content > form > label {
+	color: black;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+/* INCOMPLETED BOOK*/
+.content-two {
+	box-shadow: 0 4px 8px 0 black;
+	border-radius: 5px;
+	margin: 50px 5px 50px 5px;
+	border: 5px solid;
+	height: 420px;
+	overflow: auto;
+}
+
+/* COMPLETED BOOK */
+.content-four {
+	box-shadow: 0 4px 8px 0 black;
+	border-radius: 5px;
+	margin: 0 auto;
+	border: 5px solid;
+	height: 420px;
+	text-align: justify;
+	overflow: auto;
+	margin: 0px 5px 50px 5px;
+}
+
+/* BOOKSHELF */
+.bookshelf-content > .book-list {
+	padding: 16px;
+}
+
+.bookshelf-content > .book-list > .book-item {
+	padding: 8px 16px 16px 16px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 10px 0;
+}
+
+.bookshelf-content > .book-list > .book-item > h3,
+p {
+	margin: 8px 0;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+.bookshelf-content > .book-list > .book-item > .action > button {
+	border: 0;
+	padding: 5px;
+	margin: 0 5px 0 0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.bookshelf-content > .book-list > .book-item > .action > .green {
+	background: yellowgreen;
+	border: 2px greenyellow;
+}
+
+.bookshelf-content > .book-list > .book-item > .action > .red {
+	background: palevioletred;
+	border: 2px palevioletred;
+}
+
+.bookshelf-content > .book-list > .book-item > .action > .blue {
+	background: darkcyan;
+	border: 2px darkcyan;
+}
+
+.bookshelf-content > .book-list > .book-item > .action > .blue:hover {
+	border: 2px steelblue;
+	background-color: steelblue;
+}
+
+.bookshelf-content > .book-list > .book-item > .action > .green:hover {
+	border: 2px green;
+	background-color: green;
+}
+
+.bookshelf-content > .book-list > .book-item > .action > .red:hover {
+	border: 2px red;
+	background-color: red;
+}
+
+/* RESPONSIVE */
+/*Tablet*/
+@media screen and (max-width: 1000px) {
+	#content,
+	aside {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+/* Smartphone */
+@media only screen and (max-width: 300px) {
+	.text {
+		font-size: 11px;
+	}
+}

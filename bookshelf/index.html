@@ -1,0 +1,76 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bookshelf App</title>
+		<link rel="stylesheet" href="assets/style.css" />
+	</head>
+	<body>
+		<!-- HEADER -->
+		<header class="head-bar">
+			<h1 class="head-bar-title">Bookshelf Apps</h1>
+		</header>
+
+		<!-- BODY -->
+		<main>
+			<div id="content">
+				<section class="content-one">
+					<article class="input-content">
+						<h2>Enter New Book</h2>
+						<form id="inputBook">
+							<div class="input" id="sectionInputBookTitle">
+								<label for="inputBookTitle">Title</label>
+								<input id="inputBookTitle" type="text" placeholder="Enter the book title" required />
+								<small class="error-display" id="errorTitle">Required</small>
+							</div>
+							<div class="input" id="sectionInputAuthor">
+								<label for="inputBookAuthor">Author</label>
+								<input id="inputBookAuthor" type="text" placeholder="Enter the author's name" required />
+								<small class="error-display" id="errorAuthor">Required</small>
+							</div>
+							<div class="input" id="sectionInputYear">
+								<label for="inputBookYear">Publication Year</label>
+								<input id="inputBookYear" type="number" placeholder="Enter publication year of a book" required />
+								<small class="error-display" id="errorYear">Required</small>
+							</div>
+							<div class="input-inline">
+								<label for="inputBookIsComplete">Done reading</label>
+								<input id="inputBookIsComplete" type="checkbox" />
+							</div>
+							<button id="bookSubmit" type="button">Submit</button>
+						</form>
+					</article>
+				</section>
+
+				<section class="content-two">
+					<article class="bookshelf-content" id="bookshelfUncompleted">
+						<h2>Not Finished Reading</h2>
+						<div id="incompleteBookshelfList" class="book-list"></div>
+					</article>
+				</section>
+			</div>
+
+			<aside>
+				<section class="content-three">
+					<article class="search-content bookshelf-content" id="searchBookContent">
+						<h2>Search Book</h2>
+						<form id="searchBook">
+							<label for="searchBookTitle">Keyword</label>
+							<input id="searchBookTitle" type="text" placeholder="Book search" />
+							<button id="searchSubmit" type="submit">Search</button>
+						</form>
+						<div id="searchResult" class="book-list" style="width: 100%"></div>
+					</article>
+				</section>
+				<section class="content-four">
+					<article class="bookshelf-content" id="bookShelfCompleted">
+						<h2>Done Reading</h2>
+						<div id="completeBookshelfList" class="book-list"></div>
+					</article>
+				</section>
+			</aside>
+		</main>
+
+		<script src="assets/script.js"></script>
+	</body>
+</html>
